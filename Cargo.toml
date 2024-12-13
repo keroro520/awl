@@ -159,3 +159,11 @@ codegen-units = 1
 overflow-checks = true
 
 [workspace.dependencies]
+awl-core = { path = "./crates/core" }
+awl-manager = { path = "./crates/manager" }
+awl-prover-native = { path = "./crates/prover/native" }
+
+tokio = { version = "1.39", default-features = false }                            
+tokio-stream = "0.1.11"                                                           
+tokio-util = { version = "0.7.4", features = ["codec"] }  
+eyre = "0.6"
