@@ -1,5 +1,5 @@
 [package]
-name = "awl-core"
+name = "awl-reqpool"
 version.workspace = true
 edition.workspace = true
 rust-version.workspace = true
@@ -11,4 +11,3 @@ repository.workspace = true
 workspace = true
 
 [dependencies]
-alloy-primitives = { workspace = true }

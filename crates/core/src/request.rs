@@ -1,15 +1,11 @@
-use std::{fmt::Debug, fmt::Display, hash::Hash};
+use std::fmt::Debug;
 
-/// A trait for request id
-pub trait RequestID: Display + Debug + Clone + PartialEq + Eq + Hash {}
+type RequestID = alloy_primitives::B256;
 
 /// A trait for request
 pub trait Request: Debug + Clone {
-    /// The request id type
-    type ID: RequestID;
-
     /// Get the request id
-    fn id(&self) -> Self::ID;
+    fn id(&self) -> RequestID;
 }
 
 /// A trait for proof

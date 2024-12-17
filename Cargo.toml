@@ -167,3 +167,6 @@ tokio = { version = "1.39", default-features = false }
 tokio-stream = "0.1.11"                                                           
 tokio-util = { version = "0.7.4", features = ["codec"] }  
 eyre = "0.6"
+chrono = "0.4"
+
+alloy-primitives = "0.8.15"
